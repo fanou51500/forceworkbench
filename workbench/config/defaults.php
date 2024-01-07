@@ -65,7 +65,7 @@ $config["header_General"] = array(
     $config["checkForLatestVersion"] = array(
         "label" => "Check for Latest Version",
         "description" => "Enables checking for the latest version of Workbench.",
-        "default" => true,
+        "default" => false,
         "overrideable" => false,
         "dataType" => "boolean"
     );

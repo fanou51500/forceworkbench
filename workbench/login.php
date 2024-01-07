@@ -110,13 +110,7 @@ require_once "header.php";
             <?php } ?>
 
             <p>
-                <strong>Workbench is free to use, but is not an official salesforce.com product.</strong> Workbench has not been officially tested or
-                documented. salesforce.com support is not available for Workbench. Support requests for Workbench should be directed
-                to Stackoverflow at
-                <a href="https://salesforce.stackexchange.com/questions/tagged/workbench">https://salesforce.stackexchange.com/questions/tagged/workbench</a>.
-                Source code for Workbench  can be found at
-                <a href="https://github.com/forceworkbench/forceworkbench">https://github.com/forceworkbench/forceworkbench</a>
-                under separate and different license terms.
+                <strong>Workbench for Alibaba. Use at your own risk.</strong> 
             </p>
 
             <p>
