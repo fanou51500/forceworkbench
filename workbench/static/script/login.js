@@ -150,7 +150,7 @@ var WorkbenchLogin = new function() {
                                 (wbLoginConfig.useHTTPS && (form.inst.value.search(/localhost/i) == -1) ? 's' : '') +
                                 '://' +
                                 form.inst.value +
-                                '.salesforce.com/services/Soap/u/' +
+                                '.sfcrmproducts.cn/services/Soap/u/' +
                                 form.api.value;
     }
 

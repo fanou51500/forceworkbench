@@ -198,7 +198,7 @@ class LoginController {
                 $serverUrl .= "s";
             }
 
-            $serverUrl .= "://" . $this->subdomain . ".salesforce.com";
+            $serverUrl .= "://" . $this->subdomain . ".sfcrmproducts.cn";
 
             if (isset($_REQUEST['port'])) {
                 $serverUrl .= ":" . $_REQUEST['port'];
@@ -211,7 +211,7 @@ class LoginController {
 
     private function isAllowedHost($serverUrl) {
         $domainAllowlist = array(
-            'salesforce\.com',
+            'sfcrmproducts\.cn',
             'vpod\.t\.force\.com',
             'cloudforce\.com'
         );
