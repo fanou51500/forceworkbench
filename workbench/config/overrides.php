@@ -18,12 +18,12 @@
 // If connecting to other Salesforce environments, add a new entry to the array:
 //
 //$config["oauthConfigs"]["default"] = array(
-//                                            "login.salesforce.com" => array(
+//                                            "login.sfcrmproducts.cn" => array(
 //                                                "label" => "Production",
 //                                                "key" => "",
 //                                                "secret" => ""
 //                                            ),
-//                                            "test.salesforce.com" => array(
+//                                            "test.sfcrmproducts.cn" => array(
 //                                                "label" => "Sandbox",
 //                                                "key" => "",
 //                                                "secret" => ""

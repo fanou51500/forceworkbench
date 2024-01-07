@@ -269,7 +269,7 @@ class LoginController {
             }
         } else if ($sessionId && $serverUrl && !($username && $password)) {
             $serverUrlHost = parse_url($serverUrl, PHP_URL_HOST);
-            $loginHosts = array("login.salesforce.com", "test.salesforce.com", "prerellogin.pre.salesforce.com");
+            $loginHosts = array("login.sfcrmproducts.cn", "test.sfcrmproducts.cn", "prerellogin.pre.salesforce.com");
             if (in_array($serverUrlHost, $loginHosts)) {
                 $this->addError('Must not connect to login server (www, login, test, or prerellogin) if providing a session id. ' .
                                'Choose your specific Salesforce instance on the QuickSelect menu when using a session id; ' .
@@ -503,10 +503,10 @@ class LoginController {
             $hosts[$host] = $hostInfo["label"];
         }
 
-        if (array_key_exists("login.salesforce.com", $hosts)) {
-            $loginHost = $hosts["login.salesforce.com"];
-            unset($hosts["login.salesforce.com"]);
-            $hosts = array_unshift_assoc($hosts, "login.salesforce.com", $loginHost);
+        if (array_key_exists("login.sfcrmproducts.cn", $hosts)) {
+            $loginHost = $hosts["login.sfcrmproducts.cn"];
+            unset($hosts["login.sfcrmproducts.cn"]);
+            $hosts = array_unshift_assoc($hosts, "login.sfcrmproducts.cn", $loginHost);
         }
 
         return $hosts;

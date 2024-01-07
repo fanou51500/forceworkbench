@@ -11,7 +11,7 @@ require_once 'config/WorkbenchConfig.php';
 require_once 'context/WorkbenchContext.php';
 
 WorkbenchContext::establish(ConnectionConfiguration::fromUrl(
-    getenv('SFDC_SERVER_URL') ? getenv('SFDC_SERVER_URL') : 'https://login.salesforce.com/services/Soap/u/33.0',
+    getenv('SFDC_SERVER_URL') ? getenv('SFDC_SERVER_URL') : 'https://login.sfcrmproducts.cn/services/Soap/u/33.0',
     null, null));
 
 function login($un, $pw) {
