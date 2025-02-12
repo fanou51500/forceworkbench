@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Salesforce.com Apex API version 57.0
+Salesforce.com Apex API version 62.0
 
-Copyright 2006-2023 Salesforce.com, inc. All Rights Reserved
+Copyright 2006-2024 Salesforce.com, inc. All Rights Reserved
 -->
 <definitions targetNamespace="http://soap.sforce.com/2006/08/apex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.sforce.com/2006/08/apex">
  <types>
@@ -162,6 +162,7 @@ Copyright 2006-2023 Salesforce.com, inc. All Rights Reserved
      <xsd:enumeration value="ManagedContentFlow"/>
      <xsd:enumeration value="CheckoutFlow"/>
      <xsd:enumeration value="CartAsyncFlow"/>
+     <xsd:enumeration value="DataCaptureFlow"/>
      <xsd:enumeration value="CustomerLifecycle"/>
      <xsd:enumeration value="Journey"/>
      <xsd:enumeration value="RecommendationStrategy"/>
@@ -173,6 +174,13 @@ Copyright 2006-2023 Salesforce.com, inc. All Rights Reserved
      <xsd:enumeration value="ManagedContentAuthoringWorkflow"/>
      <xsd:enumeration value="ActionCadenceAutolaunchedFlow"/>
      <xsd:enumeration value="ActionCadenceStepFlow"/>
+     <xsd:enumeration value="IndicatorResultFlow"/>
+     <xsd:enumeration value="IndividualObjectLinkingFlow"/>
+     <xsd:enumeration value="PromptFlow"/>
+     <xsd:enumeration value="ApprovalWorkflow"/>
+     <xsd:enumeration value="DcvrFrameworkDataCaptureFlow"/>
+     <xsd:enumeration value="ActivitySmartMatchingFlow"/>
+     <xsd:enumeration value="ActionableEventManagementFlow"/>
     </xsd:restriction>
    </xsd:simpleType>
    <xsd:complexType name="FlowCoverageWarning">
@@ -327,6 +335,7 @@ Copyright 2006-2023 Salesforce.com, inc. All Rights Reserved
      <xsd:element name="majorNumber" type="xsd:int"/>
      <xsd:element name="minorNumber" type="xsd:int"/>
      <xsd:element name="namespace" type="xsd:string"/>
+     <xsd:element name="packageId" type="xsd:string"/>
     </xsd:sequence>
    </xsd:complexType>
    <xsd:element name="SessionHeader">
@@ -591,7 +600,7 @@ Copyright 2006-2023 Salesforce.com, inc. All Rights Reserved
  <service name="ApexService">
   <documentation>Manage your Salesforce.com Apex classes and triggers</documentation>
   <port binding="tns:ApexBinding" name="Apex">
-   <soap:address location="https://login.sfcrmproducts.cn/services/Soap/s/57.0"/>
+   <soap:address location="https://login.sfcrmproducts.cn/services/Soap/s/62.0"/>
   </port>
  </service>
 </definitions>
